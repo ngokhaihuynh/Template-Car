@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="../imgs/logo/logo-web.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/config.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/grid.css" />
+        <link rel="stylesheet" href="../css/gioiThieu.css" />
+        <link rel="stylesheet" href="../css/account.css" />
+        <link rel="stylesheet" href="../css/responsive.css" />
+        <title>HND Auto</title>
+    </head>
+
+    <body>
+        <div class="web-container">
+            <!-- Header Mobile -->
+            <header id="header-mobile">
+                <nav class="nav-bar">
+                    <a href="../../index.html" class="center logo-link full-h">
+                        <img src="../imgs/logo/HND.png" alt="logo" class="logo-img full-h" />
+                    </a>
+
+                    <ul class="nav-menu">
+                        <div data-page="trang-chu" class="navbar-item">
+                            <a class="nav-link" data-link="homepage" href="../../index.html">
+                                Trang chủ
+                            </a>
+                        </div>
+                        <div data-page="gioi-thieu" class="navbar-item">
+                            <a class="nav-link" data-link="gioiThieu" href="../pages/gioiThieu.html">
+                                Giới thiệu
+                            </a>
+                        </div>
+                        <div data-page="xe-dien" class="navbar-item">
+                            <a class="nav-link" data-link="xeDien" href="../pages/carsPage.html">
+                                Ô tô
+                            </a>
+                        </div>
+                        <div data-page="news" class="navbar-item">
+                            <a class="nav-link" data-link="tinTuc" href="../pages/tinTuc.html">
+                                Tin tức
+                            </a>
+                        </div>
+                        <div data-page="faq" class="navbar-item">
+                            <a class="nav-link" data-link="FAQ" href="../pages/FAQ.html">
+                                FAQ
+                            </a>
+                        </div>
+                        <div data-page="contact" class="navbar-item">
+                            <a class="nav-link" data-link="lienHe" href="../pages/lienHe.html">
+                                Liên hệ
+                            </a>
+                        </div>
+                    </ul>
+                    <div class="account-box">
+                        <a href="#" class="account-link center">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <ul class="account-tool">
+                            <li class="account-tool__item center">
+                                <a href="../pages/account_signin.html" class="account-tool__item-link">Đăng Nhập</a>
+                            </li>
+                            <li class="account-tool__item center">
+                                <a href="../pages/account_signup.html" class="account-tool__item-link">Đăng Ký</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="favorite-box">
+                        <i class="fa-solid fa-heart fa-beat"><span class="status">0</span></i>
+                        <div class="favorite-info">
+                            <span class="favorite-infor__title">
+                                Những ô tô yêu thích (<span class="favorite-info__status">0</span>)
+                            </span>
+                            <div class="favorite-list">
+                                <i class="fa-solid fa-heart favorite-info__no-cart-icon fa-beat"></i>
+                                <span class="favorite-info__no-cart-title">Hiện chưa có ô tô yêu thích, hãy thêm ngay
+                                    nhé!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-box">
+                        <a href="../pages/cart.html" class="cart-link center">
+                            <i class="fa-solid fa-cart-shopping fa-bounce">
+                                <span class="status">0</span>
+                            </i>
+                        </a>
+                    </div>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Header -->
+            <header id="header">
+                <div class="row header-top">
+                    <div class="col center logo l-3 m-6 s-12 full-h">
+                        <a href="../../index.html" class="center logo-link full-h">
+                            <img src="../imgs/logo/HND.png" alt="logo" class="logo-img full-h" />
+                        </a>
+                    </div>
+                    <div class="col l-5">
+                        <div class="search-box center center-m">
+                            <input type="text" placeholder="Nhập vào để tìm kiếm thứ bạn muốn" class="search-input" />
+                            <button class="search-btn center">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col logo l-3 m-6 s-12 account-and-cart center">
+                        <div class="account-box">
+                            <a class="account-link center">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Tài khoản</span>
+                            </a>
+                            <ul class="account-tool">
+                                <li class="account-tool__item center">
+                                    <a href="../pages/account_signin.html" class="account-tool__item-link">Đăng
+                                        Nhập</a>
+                                </li>
+                                <li class="account-tool__item center">
+                                    <a href="../pages/account_signup.html" class="account-tool__item-link">Đăng Ký</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="favorite-box">
+                            <i class="fa-solid fa-heart fa-beat"><span class="status">0</span></i>
+                            <span>Yêu thích</span>
+                            <div class="favorite-info">
+                                <span class="favorite-infor__title">
+                                    Những ô tô yêu thích (<span class="favorite-info__status">0</span>)
+                                </span>
+                                <div class="favorite-list">
+                                    <i class="fa-solid fa-heart favorite-info__no-cart-icon fa-beat"></i>
+                                    <span class="favorite-info__no-cart-title">Hiện chưa có ô tô yêu thích, hãy thêm
+                                        ngay nhé!</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-box">
+                            <a href="../pages/cart.html" class="cart-link center">
+                                <i class="fa-solid fa-cart-shopping fa-bounce">
+                                    <span class="status">0</span>
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row navbar center">
+                    <div class="navbar-list center" id="navbar-list">
+                        <div data-page="trang-chu" class="navbar-item">
+                            <a class="navbar-item__link" data-link="homepage" href="../../index.html">
+                                Trang chủ
+                            </a>
+                        </div>
+                        <div data-page="gioi-thieu" class="navbar-item">
+                            <a class="navbar-item__link" data-link="gioiThieu" href="../pages/gioiThieu.html">
+                                Giới thiệu
+                            </a>
+                        </div>
+                        <div data-page="xe-dien" class="navbar-item" id="xe-dien">
+                            <a class="navbar-item__link" data-link="carsPage" href="../pages/carsPage.html">
+                                Ô tô
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="navbar-item__sublist-box">
+                                <ul class="navbar-item__sublist" id="car-manufacturers">
+                                    <!-- Dữ liệu sẽ được chèn ở đây -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-page="news" class="navbar-item">
+                            <a class="navbar-item__link" data-link="tinTuc" href="../pages/tinTuc.html">
+                                Tin tức
+                            </a>
+                        </div>
+                        <div data-page="faq" class="navbar-item">
+                            <a class="navbar-item__link" data-link="FAQ" href="../pages/FAQ.html">
+                                FAQ
+                            </a>
+                        </div>
+                        <div data-page="contact" class="navbar-item">
+                            <a class="navbar-item__link" data-link="lienHe" href="../pages/lienHe.html">
+                                Liên hệ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="content">
+                <div class="form-container">
+                    <div class="logo-container">
+                        Đăng Nhập
+                    </div>
+                    <p class="signup-link">
+                        Đăng nhập với tư cách là ADMIN ?
+                        <a class="signup-link link" href="https://mockapi.io/projects" target="_blank">Đăng nhập</a>
+                    </p>
+
+                    <div class="social-buttons">
+                        <button class="social-button facebook">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 16.9913 5.65783 21.1283 10.4385 21.8785V14.8906H7.89941V12H10.4385V9.79688C10.4385 7.29063 11.9314 5.90625 14.2156 5.90625C15.3097 5.90625 16.4541 6.10156 16.4541 6.10156V8.5625H15.1931C13.9509 8.5625 13.5635 9.33334 13.5635 10.1242V12H16.3369L15.8936 14.8906H13.5635V21.8785C18.3441 21.1283 22.001 16.9913 22.001 12C22.001 6.47715 17.5238 2 12.001 2Z"></path>
+                            </svg>
+                            <span>Đăng nhập với Facebook</span>
+
+                        </button>
+                        <button class="social-button apple">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6734 7.2221C10.7974 7.2221 9.44138 6.2261 8.01338 6.2621C6.12938 6.2861 4.40138 7.3541 3.42938 9.0461C1.47338 12.4421 2.92538 17.4581 4.83338 20.2181C5.76938 21.5621 6.87338 23.0741 8.33738 23.0261C9.74138 22.9661 10.2694 22.1141 11.9734 22.1141C13.6654 22.1141 14.1454 23.0261 15.6334 22.9901C17.1454 22.9661 18.1054 21.6221 19.0294 20.2661C20.0974 18.7061 20.5414 17.1941 20.5654 17.1101C20.5294 17.0981 17.6254 15.9821 17.5894 12.6221C17.5654 9.8141 19.8814 8.4701 19.9894 8.4101C18.6694 6.4781 16.6414 6.2621 15.9334 6.2141C14.0854 6.0701 12.5374 7.2221 11.6734 7.2221ZM14.7934 4.3901C15.5734 3.4541 16.0894 2.1461 15.9454 0.850098C14.8294 0.898098 13.4854 1.5941 12.6814 2.5301C11.9614 3.3581 11.3374 4.6901 11.5054 5.9621C12.7414 6.0581 14.0134 5.3261 14.7934 4.3901Z"></path>
+                            </svg>
+                            <span>Đăng nhập với Apple</span>
+                        </button>
+                    </div>
+                    <div class="line"></div>
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input required="" placeholder="Enter your email" name="email" id="email" type="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Mật Khẩu</label>
+                            <input required="" name="password" placeholder="Enter your password" id="password" type="password">
+                        </div>
+
+                        <button type="submit" class="form-submit-btn">Đăng Nhập</button>
+                    </form>
+
+                    <a class="forgot-password-link link" href="../pages/forget_password.html">Quên mật khẩu ?</a>
+
+                    <p class="signup-link">
+                        Bạn chưa có tài khoản ?
+                        <a class="signup-link link" href="../pages/account_signup.html">Đăng ký</a> <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/account.js"></script>
+        <script src="../js/login.js"></script>
+        <script src="../js/home.js"></script>
+    </body>
+
+</html>

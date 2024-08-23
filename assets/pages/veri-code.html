@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="../imgs/logo/logo-web.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/config.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/grid.css" />
+        <link rel="stylesheet" href="../css/veri-code.css" />
+        <link rel="stylesheet" href="../css/responsive.css" />
+        <title>HND Auto</title>
+    </head>
+
+    <body>
+        <div class="web-container">
+            <!-- Header Mobile -->
+            <header id="header-mobile">
+                <nav class="nav-bar">
+                    <a href="../../index.html" class="center logo-link full-h">
+                        <img src="../imgs/logo/HND.png" alt="logo" class="logo-img full-h" />
+                    </a>
+
+                    <ul class="nav-menu">
+                        <div data-page="trang-chu" class="navbar-item">
+                            <a class="nav-link" data-link="homepage" href="../../index.html">
+                                Trang chủ
+                            </a>
+                        </div>
+                        <div data-page="gioi-thieu" class="navbar-item">
+                            <a class="nav-link" data-link="gioiThieu" href="../pages/gioiThieu.html">
+                                Giới thiệu
+                            </a>
+                        </div>
+                        <div data-page="xe-dien" class="navbar-item">
+                            <a class="nav-link" data-link="xeDien" href="../pages/carsPage.html">
+                                Ô tô
+                            </a>
+                        </div>
+                        <div data-page="news" class="navbar-item">
+                            <a class="nav-link" data-link="tinTuc" href="../pages/tinTuc.html">
+                                Tin tức
+                            </a>
+                        </div>
+                        <div data-page="faq" class="navbar-item">
+                            <a class="nav-link" data-link="FAQ" href="../pages/FAQ.html">
+                                FAQ
+                            </a>
+                        </div>
+                        <div data-page="contact" class="navbar-item">
+                            <a class="nav-link" data-link="lienHe" href="../pages/lienHe.html">
+                                Liên hệ
+                            </a>
+                        </div>
+                    </ul>
+                    <div class="account-box">
+                        <a href="#" class="account-link center">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <ul class="account-tool">
+                            <li class="account-tool__item center">
+                                <a href="../pages/account_signin.html" class="account-tool__item-link">Đăng Nhập</a>
+                            </li>
+                            <li class="account-tool__item center">
+                                <a href="../pages/account_signup.html" class="account-tool__item-link">Đăng Ký</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="favorite-box">
+                        <i class="fa-solid fa-heart fa-beat"><span class="status">0</span></i>
+                        <div class="favorite-info">
+                            <span class="favorite-infor__title">
+                                Những ô tô yêu thích (<span class="favorite-info__status">0</span>)
+                            </span>
+                            <div class="favorite-list">
+                                <i class="fa-solid fa-heart favorite-info__no-cart-icon fa-beat"></i>
+                                <span class="favorite-info__no-cart-title">Hiện chưa có ô tô yêu thích, hãy thêm ngay
+                                    nhé!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-box">
+                        <a href="../pages/cart.html" class="cart-link center">
+                            <i class="fa-solid fa-cart-shopping fa-bounce">
+                                <span class="status">0</span>
+                            </i>
+                        </a>
+                    </div>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Header -->
+            <header id="header">
+                <div class="row header-top">
+                    <div class="col center logo l-3 m-6 s-12 full-h">
+                        <a href="../../index.html" class="center logo-link full-h">
+                            <img src="../imgs/logo/HND.png" alt="logo" class="logo-img full-h" />
+                        </a>
+                    </div>
+                    <div class="col l-5">
+                        <div class="search-box center center-m">
+                            <input type="text" placeholder="Nhập vào để tìm kiếm thứ bạn muốn" class="search-input" />
+                            <button class="search-btn center">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col logo l-3 m-6 s-12 account-and-cart center">
+                        <div class="account-box">
+                            <a class="account-link center">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Tài khoản</span>
+                            </a>
+                            <ul class="account-tool">
+                                <li class="account-tool__item center">
+                                    <a href="../pages/account_signin.html" class="account-tool__item-link">Đăng
+                                        Nhập</a>
+                                </li>
+                                <li class="account-tool__item center">
+                                    <a href="../pages/account_signup.html" class="account-tool__item-link">Đăng Ký</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="favorite-box">
+                            <i class="fa-solid fa-heart fa-beat"><span class="status">0</span></i>
+                            <span>Yêu thích</span>
+                            <div class="favorite-info">
+                                <span class="favorite-infor__title">
+                                    Những ô tô yêu thích (<span class="favorite-info__status">0</span>)
+                                </span>
+                                <div class="favorite-list">
+                                    <i class="fa-solid fa-heart favorite-info__no-cart-icon fa-beat"></i>
+                                    <span class="favorite-info__no-cart-title">Hiện chưa có ô tô yêu thích, hãy thêm
+                                        ngay nhé!</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-box">
+                            <a href="../pages/cart.html" class="cart-link center">
+                                <i class="fa-solid fa-cart-shopping fa-bounce">
+                                    <span class="status">0</span>
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row navbar center">
+                    <div class="navbar-list center" id="navbar-list">
+                        <div data-page="trang-chu" class="navbar-item">
+                            <a class="navbar-item__link" data-link="homepage" href="../../index.html">
+                                Trang chủ
+                            </a>
+                        </div>
+                        <div data-page="gioi-thieu" class="navbar-item">
+                            <a class="navbar-item__link" data-link="gioiThieu" href="../pages/gioiThieu.html">
+                                Giới thiệu
+                            </a>
+                        </div>
+                        <div data-page="xe-dien" class="navbar-item" id="xe-dien">
+                            <a class="navbar-item__link" data-link="carsPage" href="../pages/carsPage.html">
+                                Ô tô
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="navbar-item__sublist-box">
+                                <ul class="navbar-item__sublist" id="car-manufacturers">
+                                    <!-- Dữ liệu sẽ được chèn ở đây bằng JavaScript -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-page="news" class="navbar-item">
+                            <a class="navbar-item__link" data-link="tinTuc" href="../pages/tinTuc.html">
+                                Tin tức
+                            </a>
+                        </div>
+                        <div data-page="faq" class="navbar-item">
+                            <a class="navbar-item__link" data-link="FAQ" href="../pages/FAQ.html">
+                                FAQ
+                            </a>
+                        </div>
+                        <div data-page="contact" class="navbar-item">
+                            <a class="navbar-item__link" data-link="lienHe" href="../pages/lienHe.html">
+                                Liên hệ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="content">
+                <div class="form-container">
+                    <div class="logo-container">
+                      Nhập OTP
+                    </div>
+              
+                    <form class="form">
+                      <div class="form-group">
+                        <div class="inputContainer">
+                            <input required="required" maxlength="1" type="text" class="otp-input" id="otp-input1" placeholder="1">
+                            <input required="required" maxlength="1" type="text" class="otp-input" id="otp-input2" placeholder="2">
+                            <input required="required" maxlength="1" type="text" class="otp-input" id="otp-input3" placeholder="3">
+                            <input required="required" maxlength="1" type="text" class="otp-input" id="otp-input4" placeholder="4"> 
+                           </div>
+                      </div>
+              
+                      <button class="form-submit-btn" type="submit">Xác Nhận</button>
+                    </form>
+              
+                    <p class="signup-link">
+                      Bạn chưa có tài khoản ?
+                      <a href="../pages/account_signup.html" class="signup-link link">Đăng ký</a>
+                    </p>
+                  </div>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="../js/home.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/veri-code.js"></script>
+    </body>
+
+</html>

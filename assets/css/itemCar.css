@@ -1,0 +1,315 @@
+.content__current-position {
+    width: 100%;
+    margin: auto;
+    background-color: #f3f5f7;
+    padding: 18px 100px;
+    font-size: 1.4rem;
+}
+
+.content__current-position__home-page {
+    color: #000;
+}
+
+.content__introduce-heading:hover,
+.content__current-position__home-page:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.content__current-position__current-page {
+    color: var(--primary-color);
+}
+
+.web-container {
+    width: 100vw;
+    margin: auto;
+}
+
+.itemCar {
+    height: fit-content;
+    position: relative;
+}
+
+.itemCar__leftcolumn {
+    float: left;
+    width: 65%;
+    max-width: 65%;
+    background-size: 140%;
+}
+
+.itemCar__rightcolumn {
+    float: left;
+    max-width: 35%;
+    padding-left: 5px;
+}
+
+.itemCar__leftcolumn--card--picture {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+.itemCar__leftcolumn--card,
+.itemCar__rightcolumn--card {
+    padding: 20px;
+}
+
+.itemCar__leftcolumn--card h2 {
+    font-size: 25px;
+    border-bottom: 2px solid #b3b3b3;
+    margin-bottom: 12px;
+    background-color: aqua;
+}
+
+.itemCar__leftcolumn--card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.itemCar__rightcolumn--card h2 {
+    font-size: 25px;
+}
+
+.itemCar__rightcolumn--card--car--item__title {
+    margin: 8px 0;
+    font-size: 1.6rem;
+}
+
+.rightcolunm-list__item {
+    margin: 10px 22px;
+}
+
+.content {
+    background-color: white;
+}
+
+.content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card-banner__item {
+    width: 100%;
+    height: 48px;
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin: 4px 0;
+    cursor: pointer;
+}
+
+.card-list-imgs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.itemCar__leftcolumn--card--car {
+    width: 100%;
+}
+
+.itemCar__leftcolumn--card--carRules {
+    font-size: 18px;
+    margin-bottom: 12px;
+    background-color: rgb(2, 242, 106);
+    background-size: 20px;
+}
+
+.itemCar__leftcolumn--card--car--item {
+    border-bottom: 2px solid #b3b3b3;
+}
+
+.itemCar__leftcolumn--card--car--item__date {
+    margin: 4px 0;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.itemCar__leftcolumn--card--car--item__title {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-top: 2px;
+}
+
+.itemCar__rightcolumn--card--car--item__title {
+    font-size: 50px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-top: 2px;
+}
+
+.itemCar__leftcolumn--card--car--item__warn {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-top: 2px;
+    text-decoration: underline;
+}
+
+.itemCar__rightcolumn--card--newprice {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff5722;
+    display: inline-block;
+}
+
+.itemCar__rightcolumn--card--oldprice {
+    font-size: 15px;
+    font-weight: 20;
+    color: #726e6d;
+    display: inline-block;
+    text-decoration: line-through;
+}
+
+.itemCar__rightcolumn--card--btn {
+    position: relative;
+    color: #2e2e2e;
+    padding: 8px 24px;
+    width: 150px;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 24px 14px;
+    border-radius: 4px;
+}
+
+.itemCar__rightcolumn--card--btn::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #2e2e2e;
+    z-index: 9;
+    transition: all linear 0.2s;
+    background-color: var(--primary-color);
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.itemCar__rightcolumn--card--btn:hover::after {
+    top: 0;
+    left: 0;
+}
+
+.order-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    transition: all linear 0.6s;
+}
+
+.order-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 64px 32px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 2px var(--primary-color);
+    position: relative;
+    width: 36vw;
+    user-select: none;
+}
+
+.order-form__heading-text {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 18px 0;
+    text-align: center;
+}
+
+.order-form__label {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.order-form__ticket,
+.order-form__email,
+.order-form__telephone {
+    font-size: 1.8rem;
+    padding: 8px 16px;
+    outline: none;
+    border: 1px solid #000;
+    margin: 4px auto;
+    border-radius: 4px;
+    color: #000;
+    width: 100%;
+}
+
+.order-form__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 4px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 3.4rem;
+    cursor: pointer;
+    transition: all linear 0.2s;
+    user-select: none;
+}
+
+.order-form__close:hover {
+    color: var(--primary-color);
+}
+
+.order-form__submit {
+    height: 46px;
+    width: 80%;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all linear 0.2s;
+    border-radius: 4px;
+    margin: 18px auto;
+}
+
+.order-form__submit:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 740px) {
+    .itemCar {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .itemCar > * {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .alertBox {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+}

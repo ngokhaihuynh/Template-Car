@@ -1,0 +1,33 @@
+:root {
+    --header-height: 80px;
+    --primary-color: #1ba0e2;
+    --text-color: #696969;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.center {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-m {
+    margin: auto;
+}
+
+.text-c {
+    text-align: center;
+}
+
+.full-h {
+    height: 100%;
+}
+
+.full-w {
+    width: 100%;
+}

@@ -1,0 +1,299 @@
+/* Tablet and Mobile*/
+@media (max-width: 1023px) {
+    .logo-link {
+        max-width: 45%;
+    }
+
+    #header {
+        display: none;
+    }
+
+    #header-mobile {
+        background-color: white;
+        display: block;
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: var(--header-height);
+    }
+
+    #header-mobile .nav-bar {
+        min-height: 4.375em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 1.5em;
+    }
+
+    #header-mobile .nav-branding {
+        font-size: 2rem;
+        font-weight: 600;
+        transition: color 500ms ease;
+    }
+
+    #header-mobile .nav-branding:hover,
+    #header-mobile .nav-branding:focus {
+        color: dodgerblue;
+    }
+
+    #header-mobile .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.85);
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.75s;
+        z-index: 1;
+    }
+
+    #header-mobile .nav-menu.active {
+        left: 0;
+    }
+
+    #header-mobile .nav-item {
+        list-style: none;
+    }
+
+    #header-mobile .nav-link {
+        display: block;
+        padding: 18px 0;
+        color: #000;
+        font-size: 1.5rem;
+        transition: 0.2s ease;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    #header-mobile .nav-link:hover,
+    #header-mobile .nav-link:focus {
+        color: var(--primary-color);
+    }
+
+    #header-mobile .hamburger {
+        cursor: pointer;
+        z-index: 99;
+        margin-right: 14px;
+    }
+
+    #header-mobile .hamburger::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 46px;
+        height: 46px;
+        transform: scale(1.5);
+    }
+
+    #header-mobile .bar {
+        display: block;
+        background-color: #000;
+        width: 32px;
+        height: 2px;
+        margin: 6px auto;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #header-mobile .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #header-mobile .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #header-mobile .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #header-mobile .cart-box,
+    #header-mobile .favorite-box,
+    #header-mobile .account-link {
+        font-size: 1.8rem;
+        width: 46px;
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid #ccc;
+    }
+
+    #header-mobile .account-tool {
+        max-width: 100%;
+        left: 0;
+        right: 0;
+        transform-origin: 0% 0%;
+    }
+
+    #header-mobile .account-tool {
+        max-width: 100%;
+        left: 0;
+        right: 0;
+        transform-origin: 0% 0%;
+    }
+
+    .account-tool__item-link {
+        font-size: 1.8rem;
+    }
+
+
+
+    /* Content ======================================= */
+    .content-top__container {
+        background-size: cover;
+        background-position: left;
+        background-position-x: -400px;
+        padding: 24px 24px;
+        margin-top: 60px;
+    }
+
+    .content-top__title h1 {
+        font-size: 12rem;
+    }
+
+    .content-top__decs {
+        font-size: 3rem;
+    }
+
+    .content-top__btn-container {
+        margin-top: 400px;
+        margin-left: 10px;
+        justify-content: center;
+    }
+
+    .content-top__btn,
+    .content-top__btn--transparent {
+        font-size: 2.5rem;
+        padding: 15px 25px ;
+    }
+
+    #closeIntrolBtn {
+        top: 25%;
+        right: 20px;
+    }
+
+    .car-item>img{
+        object-fit: cover;
+    }
+
+    .car-item {
+        max-width: 250px;
+    }
+
+    /* Footer ======================================== */
+
+    .footer-container {
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+
+    .footer-custom {
+        max-width: 100%;
+    }
+
+    .map {
+        max-width: 100%;
+    }
+
+    .input {
+        max-width: fit-content;
+    }
+
+    /* nút chuyển trong car */
+    .radio-inputs{
+        max-width: 600px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+    .video iframe {
+        width: 95vw;
+        height: 50vw;
+    }
+
+    .logo-link {
+        max-width: 50%;
+    }
+
+    #header-mobile .hamburger {
+        margin-right: 0;
+    }
+
+    .car-item {
+        min-width: 350px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+    }
+
+    /* content */
+
+    .content-top__title h1 {
+        margin-top: 30px;
+        font-size: 9rem;
+    }
+
+    .content-top__decs {
+        font-size: 1.5rem;
+    }
+
+    .content-top__btn-container {
+        margin-top: 80%;
+        margin-left: 10px;
+    }
+
+    .content-top__btn,
+    .content-top__btn--transparent {
+        font-size: 1.5rem;
+        padding: 10px 15px;
+    }
+
+    /* nút chuyển trong trang xe */
+    .radio-inputs{
+        font-size: 1.5rem;
+        max-width: 400px;
+    }
+    #payment-form{
+        max-width: 400px !important;
+    }
+    
+}
+
+@media (max-width: 350px) {
+    #header-mobile .hamburger {
+        margin-right: 0;
+        margin-left: 8px;
+    }
+
+    #header-mobile .hamburger>span {
+        width: 24px;
+    }
+
+    #header-mobile .cart-box,
+    #header-mobile .favorite-box,
+    #header-mobile .account-link {
+        font-size: 1.4rem;
+    }
+
+    .car-item {
+        max-width: 250px;
+    }
+    #payment-form{
+        max-width: 250px !important;
+    }
+}

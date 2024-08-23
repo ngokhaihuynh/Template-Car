@@ -1,0 +1,222 @@
+.home_backgound{
+    width: 100%;
+    height: 100vh;
+    object-fit:cover;
+}
+
+#content {
+    margin: 0 !important;
+}
+
+.content-top__container {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    margin-top:150px;
+    padding: 24px 48px;
+    background: url(../imgs/slider/desktop1.png) center / contain no-repeat;
+    background-size: cover;
+    position: relative;
+    object-fit:cover;
+}
+
+.content-top__container::after {
+    content: "";
+    z-index: -99;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../imgs/slider/desktop1.png) center / contain no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+}
+
+/* chữ welcome */
+.flip-animation {
+    display: flex;
+    transform: translate3d(0,0,0);
+  }
+  
+  .flip-animation > h3 {
+    font-size: 3rem;
+    color: #fff;
+    animation: flipping 2s infinite;
+  }
+  
+  .flip-animation > h3:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .flip-animation > h3:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .flip-animation > h3:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .flip-animation > h3:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  
+  .flip-animation > h3:nth-child(5) {
+    animation-delay: 1s;
+  }
+  
+  .flip-animation > h3:nth-child(6) {
+    animation-delay: 1.2s;
+  }
+  
+  @keyframes flipping {
+    0%, 80% {
+      transform: rotateY(360deg);
+    }
+  }
+
+.content-top__subtitle {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    font-style: italic;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.content-top__title h1 {
+    font-size: 11rem;
+    letter-spacing: 2px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 0px;
+}
+
+.content-top__decs {
+    font-size: 1.8rem;
+    color: #fff;
+    opacity: 0.7;
+    padding-left: 5px;
+    text-transform: capitalize;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.content-top__btn-container {
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.content-top__btn {
+    background-color: var(--primary-color);
+}
+
+.content-top__btn,
+.content-top__btn--transparent {
+    font-size: 2.5rem;
+    padding: 20px 30px;
+    color: white;
+    margin: 0 14px;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all linear 0.2s;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+.content-top__btn--transparent {
+    background-color: transparent;
+    border: 1px solid #fff;
+    position: relative;
+    transition: all linear 0.2s;
+    overflow: hidden;
+}
+
+.content-top__btn--transparent:hover::after {
+    width: 100%;
+}
+
+.content-top__btn--transparent:hover {
+    color: #000;
+}
+
+.content-top__btn--transparent::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #fff;
+    transition: all linear 0.4s;
+}
+
+.content-top__btn:hover {
+    background-color: #000;
+}
+
+.video-introl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.bg-blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    backdrop-filter: blur(10px);
+}
+
+.video {
+    z-index: 999;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video iframe {
+    width: 80vw;
+    height: 40vw;
+}
+
+#closeIntrolBtn {
+    position: absolute;
+    top: 0px;
+    right: 48px;
+    font-size: 4rem;
+    color: #000;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: all cubic-bezier(0.47, 1.64, 0.41, 0.8) 1s;
+    padding: 12px;
+}
+
+#closeIntrolBtn:hover {
+    transform: rotate(180deg);
+}
